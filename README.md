@@ -88,4 +88,4 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
-Developed with ❤️ by [OpenSnippet](https://github.com/open5nippet)
+Developed by [OpenSnippet](https://github.com/open5nippet)
