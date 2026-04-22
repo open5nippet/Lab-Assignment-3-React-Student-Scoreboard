@@ -1,0 +1,261 @@
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8f9fa; /* Clean light gray background */
+  color: #333333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Typography & Header */
+.header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.highlight-blue {
+  color: #007bff; /* Nice professional blue */
+}
+
+/* Container Boxes */
+.terminal-box {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Soft shadow */
+}
+
+.box-header {
+  padding: 15px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #495057;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  background-color: #fdfdfd;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.cyan-dot { background-color: #007bff; }
+
+/* Add Student Form */
+.add-student-form {
+  display: flex;
+  padding: 0;
+}
+
+.add-student-form input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-right: 1px solid #e0e0e0;
+  padding: 20px;
+  color: #333;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.add-student-form input:focus {
+  outline: none;
+  background-color: #f1f8ff; /* Light blue tint on focus */
+}
+
+.add-student-form button {
+  background: transparent;
+  color: #007bff;
+  border: none;
+  padding: 0 30px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.add-student-form button:hover {
+  background-color: #f1f8ff;
+}
+
+/* Stats Section */
+.stats-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.stat-box {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.stat-label {
+  color: #6c757d;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.stat-value {
+  color: #2c3e50;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+/* Table Styles */
+.table-responsive {
+  overflow-x: auto;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-table th {
+  text-align: left;
+  padding: 15px 20px;
+  color: #495057;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border-bottom: 2px solid #e0e0e0;
+  background-color: #fdfdfd;
+}
+
+.student-table td {
+  padding: 15px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: middle;
+}
+
+.student-name {
+  color: #2c3e50;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.student-score {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Row Highlights */
+.row-pass { border-left: 4px solid #28a745; }
+.row-fail { border-left: 4px solid #dc3545; }
+
+/* Badges */
+.badge-pass, .badge-fail {
+  padding: 5px 12px;
+  border-radius: 20px; /* Pill shape */
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+}
+
+.badge-pass {
+  background-color: #e6f4ea;
+  color: #28a745;
+  border: 1px solid #c3e6cb;
+}
+.badge-pass .dot { background-color: #28a745; margin-right: 6px; }
+
+.badge-fail {
+  background-color: #fdf3f4;
+  color: #dc3545;
+  border: 1px solid #f5c6cb;
+}
+.badge-fail .dot { background-color: #dc3545; margin-right: 6px; }
+
+/* Update Controls */
+.update-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.update-controls input {
+  width: 60px;
+  background: #ffffff;
+  border: 1px solid #ced4da;
+  color: #333;
+  padding: 6px;
+  text-align: center;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.update-controls button {
+  background: #f8f9fa;
+  color: #495057;
+  border: 1px solid #ced4da;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.update-controls button:hover {
+  background: #e2e6ea;
+  color: #333;
+}
+
+/* Removes arrows from number inputs */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/* Delete Button Styles */
+.delete-btn {
+  background: #fdf3f4 !important;
+  color: #dc3545 !important;
+  border-color: #f5c6cb !important;
+}
+
+.delete-btn:hover {
+  background: #dc3545 !important;
+  color: #ffffff !important;
+  border-color: #dc3545 !important;
+}
